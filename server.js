@@ -11,7 +11,7 @@ const methodOverride = require('method-override');
 const app         = express();
 const port        = process.env.PORT || 3000;
 //SET UP APPLICATION PARAMS
-const TodontController = require('./controller/todonts');
+const TodontsController = require('./controller/todonts');
 // LOG
 app.use( logger('dev'));
 app.use(bodyParser.urlencoded({
@@ -23,7 +23,7 @@ app.use(methodOverride('_method'));
 //VIEWS
 app.set('view engine', 'hbs');
 
-app.use('/todonts', TodontController);
+app.use('/todonts', TodontsController);
 
 //HOME
 app.get('/', function(req,res) {

@@ -1,10 +1,10 @@
 module.exports = {
   seededToDonts: [
     {
-      description: "shove old ladies",
+      description: "be a dick",
       urgent: true
     }, {
-      description: "rob a bank",
+      description: "fuck shit up",
       urgent: false
     }
   ]
